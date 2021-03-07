@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-manual',
-  templateUrl: './manual.component.html',
-  styleUrls: ['./manual.component.scss'],
+  selector: 'app-version2',
+  templateUrl: './version2.component.html',
+  styleUrls: ['./version2.component.scss'],
 })
-export class ManualComponent implements OnInit {
+export class Version2Component implements OnInit {
   zonas: any;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -14,7 +15,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'welcome',
         titulo: 'Bienvienido a CarShare',
-        captura: 'assets/capturas/home.png',
+        captura: 'assets/capturas/home.gif',
         subtitulo: 'Pantalla de bienvenida',
         descripcion: `La pantalla <i>Bienvienido a CarShare</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -35,7 +36,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'login',
         titulo: 'Acceso a la aplicación',
-        captura: 'assets/capturas/login.png',
+        captura: 'assets/capturas/login.gif',
         subtitulo: 'Pantalla de acceso a la aplicación',
         descripcion: `La pantalla <i>Acceso a la aplicación</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -64,7 +65,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'register',
         titulo: 'Registro de un nuevo usuario',
-        captura: 'assets/capturas/register.png',
+        captura: 'assets/capturas/register.gif',
         subtitulo: 'Pantalla del formulario de registro',
         descripcion: `La pantalla <i>Registro de un nuevo usuario</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -97,14 +98,14 @@ export class ManualComponent implements OnInit {
       {
         id: 'register-mail',
         titulo: 'Confirmación de registro',
-        captura: 'assets/capturas/mail-register.png',
+        captura: 'assets/capturas/mail-register.gif',
         subtitulo: 'Pantalla del mensaje para confirmar el registro',
         descripcion: `Una vez el usuario se ha registrado debe acceder a su correo para validar su registro pulsando en el enlace  descrito como <i>Click aqui</i>`,
       },
       {
         id: 'remember',
         titulo: 'He olvidado mi contraseña',
-        captura: 'assets/capturas/remember.png',
+        captura: 'assets/capturas/remember.gif',
         subtitulo: 'Pantalla del formulario para recuperar contraseña',
         descripcion: `La pantalla <i>He olvidado mi contraseña</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -129,14 +130,14 @@ export class ManualComponent implements OnInit {
       {
         id: 'remember-mail',
         titulo: 'Nueva contraseña',
-        captura: 'assets/capturas/remember-mail.png',
+        captura: 'assets/capturas/remember-mail.gif',
         subtitulo: 'Pantalla del mensaje para nueva contraseña',
         descripcion: `Mensaje enviado con la nueva contraseña para el usuario`,
       },
       {
         id: 'join',
         titulo: 'Unirme a una rueda',
-        captura: 'assets/capturas/join.png',
+        captura: 'assets/capturas/join.gif',
         subtitulo: 'Pantalla para unirse a una rueda',
         descripcion: `La pantalla <i>Unirme a una rueda</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -165,7 +166,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'menu',
         titulo: 'Mi menú',
-        captura: 'assets/capturas/menu.png',
+        captura: 'assets/capturas/menu.gif',
         subtitulo: 'Pantalla de opciones del menú',
         descripcion: `La pantalla <i>Mi menú</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -203,7 +204,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'main',
         titulo: 'Mi rueda',
-        captura: 'assets/capturas/main.png',
+        captura: 'assets/capturas/main.gif',
         subtitulo: 'Pantalla con la rueda del usuario',
         descripcion: `La pantalla <i>Mi rueda</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -227,7 +228,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'profile',
         titulo: 'Editar mi perfil',
-        captura: 'assets/capturas/profile.png',
+        captura: 'assets/capturas/profile.gif',
         subtitulo: 'Pantalla para editar el perfil de usuario',
         descripcion: `La pantalla <i>Editar mi perfil</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -268,7 +269,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'users',
         titulo: 'Gestionar usuarios',
-        captura: 'assets/capturas/users.png',
+        captura: 'assets/capturas/users.gif',
         subtitulo: 'Pantalla para gestionar los usuarios',
         descripcion: `<small>Esta es una opción solo para administradores</small><br>
         La pantalla <i>Gestionar usuarios</i> consta de:<br>
@@ -287,7 +288,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'users-form',
         titulo: 'Formulario de usuario',
-        captura: 'assets/capturas/users-form.png',
+        captura: 'assets/capturas/users-form.gif',
         subtitulo: 'Pantalla para gestionar los datos de un usuario',
         descripcion: `La pantalla <i>Formulario de usuario</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -324,7 +325,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'wheels',
         titulo: 'Gestionar ruedas',
-        captura: 'assets/capturas/wheels.png',
+        captura: 'assets/capturas/wheels.gif',
         subtitulo: 'Pantalla para gestionar las ruedas',
         descripcion: `La pantalla <i>Gestionar ruedas</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -342,7 +343,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'wheels-form',
         titulo: 'Formulario de rueda',
-        captura: 'assets/capturas/wheels-form.png',
+        captura: 'assets/capturas/wheels-form.gif',
         subtitulo: 'Pantalla para gestionar los datos de una rueda',
         descripcion: `La pantalla <i>Formulario de rueda</i> consta de:<br>
         <ul class='list-unstyled'>
@@ -375,7 +376,7 @@ export class ManualComponent implements OnInit {
       {
         id: 'about',
         titulo: 'Acerca de',
-        captura: 'assets/capturas/about.png',
+        captura: 'assets/capturas/about.gif',
         subtitulo:
           'Pantalla con los datos de la aplicación y sus desarrolladores',
         descripcion: `La pantalla <i>Acerca de</i> muestra información tanto de la aplicación como de los desarrolladores`,

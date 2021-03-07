@@ -1,4 +1,170 @@
 /* You can add global styles to this file, and also import other style files */
+$primary: #004b6f;
+$link-color: #004b6f;
+$secondary: #007dba;
+$info: #94c2d6;
+$light: #6fb2d0;
+
 html {
   scroll-behavior: smooth;
+}
+
+main {
+  cursor: default;
+  min-height: 100vh;
+  @for $var from 1 to 6 {
+    h#{$var},.h#{$var}{
+      font-family: 'Akaya Telivigala', cursive;
+    }
+  }
+  p {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  img.logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  img.icono {
+    max-width: 24px;
+    margin: 2px;
+  }
+  div.descripcion {
+
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin-bottom: 3rem;
+    }
+    p{
+      &:first-child {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    font-size: .6rem;
+    .h1 {
+      font-size: 2em;
+    }
+    img.logo {
+      max-width: 70px;
+      max-height: 70px;
+    }
+    .captura {
+      width: 100%;
+      img.img-thumbnail {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    img.logo {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .descripcion * {
+      font-size: .7rem;
+    }
+    img.img-thumbnail {
+      max-width: 200px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    img.logo {
+      max-width: 150px;
+      max-height: 150px;
+    }
+    img.img-thumbnail {
+      max-width: 400px;
+      margin: auto;
+    }
+  }
+}
+
+main {
+  cursor: default;
+  min-height: 100vh;
+  @for $var from 1 to 6 {
+    h#{$var},.h#{$var}{
+      font-family: 'Akaya Telivigala', cursive;
+    }
+  }
+  p {
+    font-family: 'Patrick Hand', cursive;
+  }
+
+  img.logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  img.icono {
+    max-width: 24px;
+    margin: 2px;
+  }
+  div.descripcion {
+
+  }
+
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      margin-bottom: 3rem;
+    }
+    p{
+      &:first-child {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    font-size: .6rem;
+    .h1 {
+      font-size: 2em;
+    }
+    img.logo {
+      max-width: 70px;
+      max-height: 70px;
+    }
+    .captura {
+      width: 100%;
+      img.img-thumbnail {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    img.logo {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .descripcion * {
+      font-size: .7rem;
+    }
+    img.img-thumbnail {
+      max-width: 200px;
+    }
+  }
+
+  @media (min-width: 700px) {
+    img.logo {
+      max-width: 150px;
+      max-height: 150px;
+    }
+    img.img-thumbnail {
+      max-width: 400px;
+      margin: auto;
+    }
+  }
 }
