@@ -1,0 +1,44 @@
+<main class="container-fluid bg-info">
+  <div class="row">
+    <div class="col-3 col-md-12 d-flex justify-content-center p-3">
+      <img [src]="'assets/logo.png'" class="bg-white border rounded-pill  logo" alt="Logo" />
+    </div>
+    <div class="col-9 col-md-12 align-self-center">
+      <p class="h1 text-center text-capitalize text-light">Manual de usuario</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="bg-white border border-dark col-md-9 mt-md-3 mx-5 rounded px-2 py-4">
+      <p class="h5">
+        Aquí se explica el funcionamiento de la aplicación CarShare.
+      </p>
+      <p class="">
+        <img [src]="'assets/icono.png'" class="icono" alt="Logo" />
+        CarShare está destinada a la generación de horarios semanales para el reparto de conducción en un grupo
+      </p>
+      <p class="h4 text-center">
+        Uso de la aplicación
+      </p>
+      <ul>
+        <li *ngFor="let zona of zonas" class="d-flex">
+          <section class="zona px-2 w-100" id={{zona.id}}>
+            <p class="titulo">{{zona.titulo}}</p>
+            <div class="">
+              <div *ngIf="zona.hasOwnProperty('captura')" class="captura float-left d-flex flex-column mr-2">
+                <img [src]="zona.captura" class="img-thumbnail w-100" [attr.alt]="zona.subtitulo" />
+                <small><i>{{zona.subtitulo}}</i></small>
+              </div>
+              <div [innerHTML]="zona.descripcion" class="descripcion">
+              </div>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer class="row">
+    <div class="col-12 p-4">
+
+    </div>
+  </footer>
+</main>
