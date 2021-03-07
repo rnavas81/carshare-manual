@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ManualComponent } from './views/manual/manual.component';
 import { Version2Component } from './views/version2/version2.component';
+import { LazyLoadImageModule } from "ng-lazyload-image";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Version2Component } from './views/version2/version2.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

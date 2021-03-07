@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManualComponent implements OnInit {
   zonas: any;
-  constructor() {}
+  image: string;
+  constructor() {
+    this.image = "image";
+  }
 
   ngOnInit(): void {
     this.zonas = [

@@ -25,7 +25,7 @@
             <p class="titulo">{{zona.titulo}}</p>
             <div class="">
               <div *ngIf="zona.hasOwnProperty('captura')" class="captura float-left d-flex flex-column mr-2">
-                <img [src]="zona.captura" class="img-thumbnail w-100" [attr.alt]="zona.subtitulo" />
+                <img [lazyLoad]="zona.captura" class="img-thumbnail w-100" [attr.alt]="zona.subtitulo" />
                 <small><i>{{zona.subtitulo}}</i></small>
               </div>
               <div [innerHTML]="zona.descripcion" class="descripcion">

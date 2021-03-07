@@ -20,7 +20,7 @@
         Uso de la aplicación
       </p>
       <ul>
-        <li *ngFor="let zona of zonas" class="d-flex">
+        <li *ngFor="let zona of zonas;index as i" class="d-flex">
           <section class="zona px-2 w-100" id={{zona.id}}>
             <p class="titulo">{{zona.titulo}}</p>
             <div class="">
